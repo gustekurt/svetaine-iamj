@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokybiško Miego Laboratorija</title>
+    <link rel="stylesheet" href="kontaktai.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="home.html" class="logo">Kokybiško Miego Laboratorija</a>
+        <nav>
+            <ul id="menu">
+                <li><a href="apiemus.html">Apie mus</a></li>
+                <li><a href="paslaugos.html">Paslaugos</a></li>
+                <li><a href="kontaktai.html">Kontaktai</a></li>
+            </ul>
+            <div class="burger" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/titulineedited.png" alt="Hero Image" class="hero-image">
+        <div class="hero-text">
+            <h1>Kontaktai</h1>
+        </div>
+    </section>
+
+
+    <!-- ---------Contact------- -->
+
+    <section class="contact-section">
+        <h2>Dėl Išsamesnės Informacijos Kreipkitės</h2>
+        <form id="contact-form" class="contact-container">
+            <div class="contact-row">
+                <div class="contact-column">
+                    <label for="email">El. paštas:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="contact-column">
+                    <label for="phone">Telefono numeris:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+            <div class="contact-full-row">
+                <label for="name">Vardas:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="contact-full-row">
+                <label for="message">Žinutė:</label>
+                <textarea id="message" name="message" rows="6" placeholder="Įrašykite savo žinutę..." required></textarea>
+            </div>
+            <div class="contact-full-row">
+                <button type="submit" class="submit-button">Siųsti</button>
+            </div>
+        </form>
+    </section>
+
+
+    <!-- ----------Info-------- -->
+
+    <section class="info-section">
+        <div class="info-box">
+            <p>El. paštas</p>
+            <h3>info@kml.lt</h3>
+        </div>
+        <div class="info-box">
+            <p>Telefono numeris</p>
+            <h3>+370 6983 1917</h3>
+        </div>
+        <div class="info-box">
+            <p>Lokacija</p>
+            <h3>Smėlio g. 10. Vilnius</h3>
+        </div>
+    </section>  
+
+
+    <!-- ----------Map-------- -->
+
+    <section class="map-section">
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.817418760051!2d25.310022998540163!3d54.706642226874905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dd96bd116f9fb7%3A0xb52b7a191ac7de0b!2sSm%C4%97lio%20g.%2010%2C%20Vilnius%2C%2010324%20Vilniaus%20m.%20sav.!5e0!3m2!1slt!2slt!4v1731678260432!5m2!1slt!2slt" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    
+
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Kokybiško Miego Laboratorija</h3>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="home.html">Pagrindinis puslapis</a></li>
+                    <li><a href="apiemus.html">Apie mus</a></li>
+                    <li><a href="paslaugos.html">Paslaugos</a></li>
+                    <li><a href="kontaktai.html">Kontaktai</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Turite klausimų? Susisiekite</h4>
+                <form>
+                    <input type="text" placeholder="Vardas" required>
+                    <textarea placeholder="Klausimas" required></textarea>
+                    <button type="submit" class="submit-button">Siųsti</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>Kokybiško Miego Laboratorija 2024</p>
+    </div>
+    
+    
+
+</body>
+</html>

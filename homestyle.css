@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: garamond;
+}
+
+body {
+    background-color: #FAFAFA;
+    color: #1F2E3C;
+}
+
+header {
+    background-color: #7C989F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-size: 1.5em;
+    color: #FAFAFA;
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #FAFAFA;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.burger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #FAFAFA;
+}
+
+.hero {
+    text-align: center;
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-40%, -50%);
+    color: #FAFAFA;
+    font-size: 2em;
+    padding: 50px;
+}
+
+
+body {
+    background-color: #FAFAFA;
+    color: #1F2E3C;
+}
+
+header {
+    background-color: #7C989F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative; 
+}
+
+header .logo {
+    font-size: 1.5em;
+    color: #FAFAFA;
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    color: #FAFAFA;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.burger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #FAFAFA;
+}
+
+.hero {
+    text-align: center;
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FAFAFA;
+    font-size: 2em;
+    padding: 50px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    header .burger {
+        display: block; 
+    }
+
+    header nav ul {
+        display: none; 
+        flex-direction: column;
+    }
+
+    header nav ul.active {
+        display: flex; 
+    }
+
+    .hero-text {
+        font-size: 1.5em; 
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px){
+    .hero-text {
+        font-size: 1em; 
+        padding: 10px;
+    }
+}
+
+
+/* ------------------Com4rt------------- */
+
+.com4rt-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    padding: 20px;
+}
+
+.com4rt-image {
+    width: 60%; 
+    height: auto;
+    border-radius: 10px;
+    margin-left: auto; 
+}
+
+.com4rt-content {
+    position: absolute;
+    left: 5%; 
+    background-color: #D0E4FA; 
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: #1F2E3C;
+    max-width: 40%;
+}
+
+.com4rt-content h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.com4rt-content button {
+    padding: 10px 20px;
+    background-color: #1F2E3C;
+    color: #FAFAFA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+@media (max-width: 480px){
+    .com4rt-content h2 {
+        font-size: 1em;
+    }
+}
+
+/* ------------features---------------- */
+
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #FAFAFA;
+}
+
+.feature {
+    text-align: center;
+    width: 20%;
+    font-size: 1.2em;
+}
+
+/* --------paslaugos--------------- */
+
+.services-section {
+    display: flex;
+    align-items: center;
+    background-color: #D0E4FA; 
+    padding: 20px 5%; 
+    box-sizing: border-box;
+}
+
+.services-content {
+    flex: 1;
+    color: #1F2E3C;
+    padding-right: 20px; 
+}
+
+.services-content h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.services-content ul {
+    list-style-type: disc;
+    margin: 0 0 15px 20px; 
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.services-content li {
+    margin-bottom: 8px;
+}
+
+.services-content button {
+    padding: 10px 20px;
+    background-color: #1F2E3C;
+    color: #FAFAFA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.services-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 20px; 
+}
+
+.services-image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px; 
+    box-sizing: border-box;
+}
+
+/* For phone screens */
+@media (max-width: 480px) {
+    .services-section {
+        flex-direction: column; 
+        padding: 20px 5%; 
+    }
+
+    .services-content {
+        max-width: 100%; 
+        padding-right: 0; 
+    }
+
+    .services-content h2 {
+        font-size: 1.6em; 
+        margin-bottom: 8px;
+    }
+
+    .services-content ul {
+        font-size: 1em; 
+        margin: 0 0 12px 0; 
+    }
+
+    .services-content li {
+        margin-bottom: 5px; 
+        text-align: left;
+    }
+
+    .services-content button {
+        padding: 6px 14px; 
+        font-size: 0.9em; 
+    }
+
+    .services-image-wrapper {
+        width: 100%; 
+        margin-top: 15px; 
+        justify-content: center; 
+    }
+
+    .services-image {
+        width: 90%; 
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/* -------gamyba------- */
+
+
+.manufacturing-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #FAFAFA;
+}
+
+.manufacturing-section h2 {
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    color: #1F2E3C;
+}
+
+.manufacturing-section button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    background-color: #1F2E3C;
+    color: #FAFAFA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.manufacturing-images {
+    display: flex;
+    justify-content: space-around; 
+    gap: 20px; 
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.manufacturing-images img {
+    max-width: 200px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-sizing: border-box;
+}
+
+/* -------footer--------- */
+
+
+.footer {
+    background-color: #8DAAB1; 
+    color: #FAFAFA;
+    padding: 20px 5%;
+    box-sizing: border-box;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 5px; 
+}
+
+.footer-logo h3 {
+    color: #FAFAFA;
+    font-size: 1.8em;
+    margin: 0;
+    text-decoration: none;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-nav ul li {
+    margin-bottom: 5px;
+}
+
+.footer-nav ul li a {
+    color: #FAFAFA;
+    text-decoration: underline;
+    font-size: 1.1em;
+}
+
+.footer-contact h4 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    color: #FAFAFA;
+}
+
+.footer-contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-contact input,
+.footer-contact textarea {
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 1px solid #8DAAB1;
+    resize: none;
+}
+
+.footer-contact button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: #2A3A49;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer Bottom Line Section */
+.footer-bottom {
+    background-color: #2A3A49; 
+    text-align: center;
+    padding: 15px 0; 
+    color: #FAFAFA;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 15px; 
+    }
+
+    .footer-logo h3 {
+        font-size: 1.5em; 
+        text-align: center;
+    }
+
+    .footer-nav ul {
+        text-align: center; /* Center align navigation links */
+    }
+
+    .footer-nav ul li a {
+        font-size: 1em; /* Slightly smaller font for links */
+    }
+
+    .footer-contact h4 {
+        text-align: center;
+        font-size: 1.2em; /* Slightly smaller headline */
+    }
+
+    .footer-contact input,
+    .footer-contact textarea {
+        font-size: 1em; /* Adjust input size */
+        width: 100%; /* Ensure inputs stretch across available space */
+    }
+
+    .footer-contact button {
+        font-size: 1em;
+        width: 100%; /* Button spans full width */
+    }
+}
+
+
+/* -------wiggle----- */
+
+@keyframes wiggle {
+    0% { transform: rotate(0); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0); }
+}
+
+.wiggle {
+    animation: wiggle 0.5s ease-in-out;
+}

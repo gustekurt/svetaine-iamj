@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokybiško Miego Laboratorija</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="home.html" class="logo">Kokybiško Miego Laboratorija</a>
+        <nav>
+            <ul id="menu">
+                <li><a href="apiemus.html">Apie mus</a></li>
+                <li><a href="paslaugos.html">Paslaugos</a></li>
+                <li><a href="kontaktai.html">Kontaktai</a></li>
+            </ul>
+            <div class="burger" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/titulineedited.png" alt="Hero Image" class="hero-image">
+        <div class="hero-text">
+            <h1>Kokybiško Miego Laboratorija - <br> Jūsų kelias į individualiai pritaikytą miegą</h1>
+        </div>
+    </section>
+
+    <!-- Com4rt Mattress Section -->
+    <section class="com4rt-section">
+        <div class="com4rt-content">
+            <h2>Mūsų Com4rt Čiužiniai – sukurti pagal Jūsų kūno ir sveikatos poreikius</h2>
+            <button onclick="location.href='paslaugos.html'">Skaityti daugiau</button>
+        </div>
+        <img src="images/com4rt.png" alt="Com4rt Mattress Image" class="com4rt-image">
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+            <img src="images/bedicon.png" alt="Feature Icon">
+            <p>Pagal Jūsų kūno parametrus sukurti čiužiniai</p>
+        </div>
+        <div class="feature">
+            <img src="images/ciuzinysicon.png" alt="Feature Icon">
+            <p>8FloWsis oro cirkuliacijos sistema</p>
+        </div>
+        <div class="feature">
+            <img src="images/ciuzinysicon.png" alt="Feature Icon">
+            <p>Raumenų pertempimo prevencija</p>
+        </div>
+        <div class="feature">
+            <img src="images/garantijaicon.png" alt="Feature Icon">
+            <p>10 metų garantija ir 150 naktų grąžinimo galimybė</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="services-content">
+            <h2>Mūsų Paslaugos - Jūsų Geresniam Miegui</h2>
+            <ul>
+                <li>Individualus kompiuterinis kūno tyrimas;</li>
+                <li>Com4rt čiužiniai, pritaikyti jūsų sveikatai;</li>
+                <li>Dviguba pagalba – jam ir jai;</li>
+                <li>Specialūs užvalkalai visiems sezonams;</li>
+                <li>150 naktų pinigų grąžinimo garantija;</li>
+                <li>Nemokamas pristatymas ir senojo čiužinio išvežimas.</li>
+            </ul>
+            <button onclick="location.href='paslaugos.html'">Skaityti daugiau</button>
+        </div>
+        <div class="services-image-wrapper">
+            <img src="images/paslaugoslova.png" alt="Services Image" class="services-image">
+        </div>
+    </section>
+    
+    
+
+    <!-- Advanced Manufacturing Section -->
+    <section class="manufacturing-section">
+        <h2>Pažangi Čiužinių Gamyba</h2>
+        <button onclick="location.href='paslaugos.html'">Užsirašyti konsultacijai</button>
+        <div class="manufacturing-images">
+            <img src="images/OIG4.jpeg" alt="Manufacturing Image 1">
+            <img src="images/OIG4 (1).jpeg" alt="Manufacturing Image 2">
+            <img src="images/OIG1.XaMzJT7oa7Ik2.jpeg" alt="Manufacturing Image 3">
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Kokybiško Miego Laboratorija</h3>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="home.html">Pagrindinis puslapis</a></li>
+                    <li><a href="apiemus.html">Apie mus</a></li>
+                    <li><a href="paslaugos.html">Paslaugos</a></li>
+                    <li><a href="kontaktai.html">Kontaktai</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Turite klausimų? Susisiekite</h4>
+                <form>
+                    <input type="text" placeholder="Vardas" required>
+                    <textarea placeholder="Klausimas" required></textarea>
+                    <button type="submit" class="submit-button">Siųsti</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>Kokybiško Miego Laboratorija 2024</p>
+    </div>
+    
+    
+
+</body>
+</html>

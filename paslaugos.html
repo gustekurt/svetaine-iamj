@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokybiško Miego Laboratorija</title>
+    <link rel="stylesheet" href="paslaugos.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="home.html" class="logo">Kokybiško Miego Laboratorija</a>
+        <nav>
+            <ul id="menu">
+                <li><a href="apiemus.html">Apie mus</a></li>
+                <li><a href="paslaugos.html">Paslaugos</a></li>
+                <li><a href="kontaktai.html">Kontaktai</a></li>
+            </ul>
+            <div class="burger" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="images/titulineedited.png" alt="Hero Image" class="hero-image">
+        <div class="hero-text">
+            <h1>Paslaugos</h1>
+        </div>
+    </section>
+
+    <!-- --------Com4rt placiau------- -->
+
+    <section class="com4rt-section">
+        <div class="com4rt-content">
+            <h2>Individualiai gaminami čiužiniai Com4rt, tai:</h2>
+            <li>Pagal kūno ypatumus pagamintas čiūžinis (ūgis, svoris, kūno apimtys)</li>
+            <li> Medicininius reikalavimus atitinkantis čiūžinis:
+                <li>užtikrina gerą oro cirkuliaciją</li>
+                <li>apsaugo nuo drėgmės kaupimosi</li>
+                <li>išlaiko taisiklingą stuburo padėtį</li>
+                <li>tolygiai paskirsto kūno svorį</li>
+                <li>Raumenų pertempimo prevencija</li>
+            </li>
+            <li>Sustiprinto branduolio čiūžiniai</li>
+            <li>8 oro cirkuliavimo zonų sistema 8FloWsis</li>
+            <li>Padidinto tankio sluoksniai</li>
+            <li>Nugaros skausmus mažinantis čiūžinis</li>
+        </div>
+        <img src="images/com4rtpaslaugos.webp" alt="Com4rt Mattress Image" class="com4rt-image">
+    </section>
+
+    <!-- ---------Benefit------- -->
+
+    <section class="benefit-section">
+        <div class="benefit-content">
+            <h2>Kiekvienas, šiandien užsakęs individualaus čiūžinio gamybą, gauna:</h2>
+            <ul>
+                <li>√    Individualų kompiuterinį tyrimą (TGD - taisyklingo gulėjimo diagrama) čiužinio medžiagų tinkamumui nustatyti (vertė 178 Eur);</li>
+                <li>√   Jam ir jai pritaikytas čiūžinio puses (zonas);</li>
+                <li>√   Individualių išmatavimų čiūžinį;</li>
+                <li>√   Du užvalkalus vasarai ir žiemai (vertė 275 Eur metams);</li>
+                <li>√   Čiužinio priežūros vadovą (vertė 55 Eur);</li>
+                <li>√   150 naktų pinigų grąžinimo garantija;</li>
+                <li>√   2 ortopedines pagalves (vertė 130 Eur);</li>
+                <li>√   Nemokamą čiužinio atvežimą ir senojo išvežimą (vertė 85 Eur);</li>
+                <li>√   Specialų čiužinio priežiūros erkučių dulkių sriublį (vertė 55 Eur);</li>
+                <li>√   Automatinę čiužinio pervertimo priminimų sistemą (vertė 30 Eur metams);</li>
+                <li>√   Garantija 10 metų (vertė 275 Eur metams).</li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- --------Vizito užsakymas------- -->
+
+    <section class="visit-order-section">
+        <form id="visit-form" class="form-container">
+            <div class="form-column">
+                <label for="name">Vardas:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">El. paštas:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="phone">Telefono numeris:</label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <label for="date">Data:</label>
+                <input type="date" id="date" name="date" required>
+    
+                <label>Gaminsime čiužinį:</label>
+                <select id="mattress-choice" name="mattress-choice" required>
+                    <option value="vienam">Vienam</option>
+                    <option value="dviem">Dviem</option>
+                </select>
+            </div>
+    
+            <div class="question-box">
+                <label for="questions">Jūsų klausimai:</label>
+                <textarea id="questions" name="questions" placeholder="Įrašykite klausimus čia..." rows="6" required></textarea>
+    
+                <div class="checkboxes">
+                    <label>
+                        <input type="checkbox" id="sms-consent" required> Sutinku gauti su paslauga susijusias SMS žinutes;
+                    </label>
+                    <label>
+                        <input type="checkbox" id="data-consent" required> Sutinku, kad mano duomenys būtų tvarkomi ir peržiūrimi;
+                    </label>
+                    <label>
+                        <input type="checkbox" id="data-accuracy" required> Patvirtinu, kad įvesti duomenys yra teisingi.
+                    </label>
+                </div>
+    
+                <button type="submit" class="submit-button">Siųsti</button>
+                <p id="error-message" class="error-message" style="display:none;">Prašome užpildyti visus laukus ir pažymėti visus langelius.</p>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Kokybiško Miego Laboratorija</h3>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="home.html">Pagrindinis puslapis</a></li>
+                    <li><a href="apiemus.html">Apie mus</a></li>
+                    <li><a href="paslaugos.html">Paslaugos</a></li>
+                    <li><a href="kontaktai.html">Kontaktai</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Turite klausimų? Susisiekite</h4>
+                <form>
+                    <input type="text" placeholder="Vardas" required>
+                    <textarea placeholder="Klausimas" required></textarea>
+                    <button type="submit" class="submit-button">Siųsti</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>Kokybiško Miego Laboratorija 2024</p>
+    </div>
+    
+    
+
+</body>
+</html>
